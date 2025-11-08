@@ -40,48 +40,49 @@ st.markdown("""
 
 # --- Sidebar: select datasets (applied to all materials) ---
 st.sidebar.markdown("### Select MLIPs to display")
-all_labels = ["DFT"]
+all_labels = ["DFT","MACE OMAT SMALL"]
 selected_labels = []
 for label in all_labels:
     if st.sidebar.checkbox(label, value=True):
         selected_labels.append(label)
 
 # --- Define materials and their YAML files ---
+
 materials = {
     "Mono-layer WSe2": {
-        "band_files": ["./phonon_data/1-WSe2/band.yaml"],
-        "colors": ["black"],
-        "labels": ["DFT"]
+        "band_files": ["./phonon_data/1-WSe2/band-mono-vasp.yaml", "./phonon_data/1-WSe2/band-mono-omat-small.yaml"],
+        "colors": ["black", "blue"],
+        "labels": ["DFT", "MACE OMAT SMALL"]
     },
         "Mono-layer MoS2": {
-        "band_files": ["./phonon_data/2-MoS2/band.yaml"],
-        "colors": ["black"],
-        "labels": ["DFT"]
+        "band_files": ["./phonon_data/2-MoS2/band-mono-vasp.yaml", "./phonon_data/2-MoS2/band-mono-omat-small.yaml"],
+        "colors": ["black", "blue"],
+        "labels": ["DFT", "MACE OMAT SMALL"]
     },
         "Mono-layer MoSe2": {
-        "band_files": ["./phonon_data/3-MoSe2/band.yaml"],
-        "colors": ["black"],
-        "labels": ["DFT"]
+        "band_files": ["./phonon_data/3-MoSe2/band-mono-vasp.yaml", "./phonon_data/3-MoSe2/band-mono-omat-small.yaml"],
+        "colors": ["black", "blue"],
+        "labels": ["DFT", "MACE OMAT SMALL"]
     },
         "Mono-layer MoTe2": {
-        "band_files": ["./phonon_data/4-MoTe2/band.yaml"],
-        "colors": ["black"],
-        "labels": ["DFT"]
+        "band_files": ["./phonon_data/4-MoTe2/band-mono-vasp.yaml", "./phonon_data/4-MoTe2/band-mono-omat-small.yaml"],
+        "colors": ["black", "blue"],
+        "labels": ["DFT", "MACE OMAT SMALL"]
     },
         "Mono-layer WS2": {
-        "band_files": ["./phonon_data/5-WS2/band.yaml"],
-        "colors": ["black"],
-        "labels": ["DFT"]
+        "band_files": ["./phonon_data/5-WS2/band-mono-vasp.yaml", "./phonon_data/5-WS2/band-mono-omat-small.yaml"],
+        "colors": ["black", "blue"],
+        "labels": ["DFT", "MACE OMAT SMALL"]
     },
         "Mono-layer WTe2": {
-        "band_files": ["./phonon_data/6-WTe2/band.yaml"],
-        "colors": ["black"],
-        "labels": ["DFT"]
+        "band_files": ["./phonon_data/6-WTe2/band-mono-vasp.yaml", "./phonon_data/6-WTe2/band-mono-omat-small.yaml"],
+        "colors": ["black", "blue"],
+        "labels": ["DFT", "MACE OMAT SMALL"]
     },
         "Mono-layer TaS2": {
-        "band_files": ["./phonon_data/7-TaS2/band.yaml"],
-        "colors": ["black"],
-        "labels": ["DFT"]
+        "band_files": ["./phonon_data/7-TaS2/band-mono-vasp.yaml", "./phonon_data/7-TaS2/band-mono-omat-small.yaml"],
+        "colors": ["black", "blue"],
+        "labels": ["DFT", "MACE OMAT SMALL"]
     }
 }
 
