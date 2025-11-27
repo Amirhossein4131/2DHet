@@ -1,0 +1,21 @@
+Config Type, Num Structures, Atoms per Structure, Temp [K], AL Sim Time [PS]
+WSe2_mono_ramp, 162, 12, 5-600, 5
+MoS2_mono_ramp, 104, 12, 5-600, 5
+MoSe2_mono_ramp, 170, 12, 5-600, 5
+MoTe2_mono_ramp, 166, 12, 5-600, 5
+WS2_mono_ramp, 125, 12, 5-600, 5
+WTe2_mono_ramp, 192, 12, 5-600, 5
+
+WSe2_mono_phonon, 73, 48, 600, 3
+MoS2_mono_phonon, 106-50, 48-98, 600, 3-1
+MoSe2_mono_phonon, 108, 48, 600, 3
+MoTe2_mono_phonon, 117, 48, 600, 3
+WS2_mono_phonon, 67-73, 48-98, 600, 3-1
+WTe2_mono_phonon, 109, 48, 600, 3
+
+WSe2_bi_AB_0_phonon, 57, 96, 600, 1
+MoS2_bi_AB_0_phonon, 53, 216, 600, 1
+MoSe2_bi_AB_0_phonon, 48, 96, 600, 1
+MoTe2_bi_AB_0_phonon, 39, 96, 600, 1
+WS2_bi_AB_0_phonon, 54, 216, 600, 1
+WTe2_bi_AB_0_phonon, 49, 96, 600, 1
