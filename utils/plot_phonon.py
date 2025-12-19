@@ -124,10 +124,11 @@ def create_phonon_figure(
 
 
 fig = create_phonon_figure(
-    band_files=["./phonon_data/bi_AB_0/6-WTe2/band-mono-vasp.yaml", "./phonon_data/bi_AB_0/6-WTe2/band-mono-omat-small.yaml",
-                "./phonon_data/bi_AB_0/6-WTe2/band-mono-omat-small-ft.yaml"],
+    band_files=["./phonon_data/grace/mono/6-WTe2/band-mono-vasp.yaml", 
+                "./phonon_data/grace/mono/6-WTe2/band-mono-grace-2l-oam.yaml", 
+                "./phonon_data/grace/mono/6-WTe2/band-mono-grace-2l-oam-ft.yaml"],
     colors=["black", "blue", "orange"],
-    labels=["DFT", "MACE-OMAT-small", "MACE-OMAT-small-FT"],
-    branches_to_show = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17],
-    save_png="phonon_WTe2_bi_AB0.png"
+    labels=["DFT", "GRACE-2L-OAM", "GRACE-2L-OAM-FT"],
+    branches_to_show = [0, 1, 2, 3, 4, 5, 6, 7, 8],
+    save_png="phonon_WTe2_mono_grace.png"
 )
